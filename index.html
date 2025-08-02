@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="generateFilelist.js"></script>
+  <title>📁 Projektübersicht</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Dark Mode Toggle
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
 </head>
-<body>
-<<<<<<< HEAD
-    <h1>Superninja</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo tenetur nostrum magni, nemo enim officiis provident. Velit odit fugiat enim, totam possimus ipsa, nisi maiores dolorum impedit laboriosam voluptate?</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo tenetur nostrum magni, nemo enim officiis provident. Velit odit fugiat enim, totam possimus ipsa, nisi maiores dolorum impedit laboriosam voluptate?</p>
-=======
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos minus aperiam. Molestiae voluptatum aliquid cumque assumenda asperiores quia debitis beatae, doloribus, natus vero quam adipisci impedit earum, placeat a?</p>
->>>>>>> 838f186 (My First page.)
+<body class="bg-gradient-to-br from-gray-100 to-white text-gray-800 dark:from-gray-900 dark:to-black dark:text-white transition duration-300">
+
+  <div class="max-w-5xl mx-auto px-6 py-10">
+    <div class="flex justify-between items-center mb-10">
+      <h1 class="text-4xl font-bold">📁 Projektübersicht</h1>
+      <button onclick="document.body.classList.toggle('dark')" class="bg-gray-200 dark:bg-gray-700 text-sm px-4 py-2 rounded-lg hover:scale-105 transition">
+        🌗 Toggle Theme
+      </button>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Card: site/ -->
+      <a href="site/" class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transform transition hover:-translate-y-1">
+        <div class="text-3xl mb-2">📁</div>
+        <div class="font-semibold text-lg">site/</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">Ordner mit HTML-Inhalten</div>
+      </a>
+
+      <!-- Card: index.html -->
+      <a href="index.html" class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transform transition hover:-translate-y-1">
+        <div class="text-3xl mb-2">📄</div>
+        <div class="font-semibold text-lg">index.html</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">Startseite des Projekts</div>
+      </a>
+
+      <!-- Card: README.md -->
+      <a href="README.md" class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transform transition hover:-translate-y-1">
+        <div class="text-3xl mb-2">📝</div>
+        <div class="font-semibold text-lg">README.md</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">Projektbeschreibung</div>
+      </a>
+    </div>
+
+    <footer class="mt-12 text-center text-sm text-gray-400 dark:text-gray-600">
+      ✨ Powered by BrowserSync – angepasst mit ❤️
+    </footer>
+  </div>
+
 </body>
 </html>
